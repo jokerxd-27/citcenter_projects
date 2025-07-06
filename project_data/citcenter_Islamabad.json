@@ -1,0 +1,21 @@
+{
+  "projectName": "citcenter Islamabad",
+  "clientDomain": "khi.com",
+  "contactEmail": "1@as.com",
+  "websitePurpose": "courses",
+  "selectedWebsiteSections": [
+    "home",
+    "about",
+    "testimonials",
+    "faq",
+    "contact"
+  ],
+  "budget": 2,
+  "needsSSL": true,
+  "otherRequirements": "",
+  "formName": "citcenter_website_creation",
+  "clientIdentifier": "citcenter_client_123",
+  "submissionTimestamp": "2025-07-06T07:46:37.458Z",
+  "status": "pending",
+  "lastUpdated": "2025-07-06T07:46:54.736Z"
+}
