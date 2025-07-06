@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CitCenter Islamabad - Your path to education excellence.">
+    <meta name="keywords" content="CitCenter, Islamabad, courses, education, learning, programs">
+    <title>CitCenter</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 10px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+            text-align: center;
+        }
+
+        /* Header Styles */
+        header {
+            background: #35424a;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+            text-align: left;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+
+        header a:hover {
+            color: #cccccc;
+            font-weight: bold;
+        }
+
+        /* Showcase */
+        #showcase {
+            min-height: 400px;
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            text-align: center;
+            color: #fff;
+        }
+
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        #showcase p {
+            font-size: 20px;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 20px 0;
+        }
+
+        #about-us, #testimonials, #faq, #contact {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        /* Course Listing */
+        .course-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .course-list li {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .course-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* Testimonial Styles */
+        .testimonial {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* Contact Form Styles */
+        #contact-form {
+            padding: 20px;
+        }
+
+        #contact-form input[type="text"],
+        #contact-form input[type="email"],
+        #contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        #contact-form button {
+            padding: 10px 20px;
+            background-color: #35424a;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #contact-form button:hover {
+            background-color: #e8491d;
+        }
+
+        /* Button */
+        .button {
+            height: 38px;
+            background: #e8491d;
+            border: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #fff;
+        }
+
+        /* Footer Styles */
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #35424a;
+            text-align: center;
+        }
+
+        /* Mobile Styles */
+        @media(max-width: 768px) {
+            header #branding,
+            header nav {
+                float: none;
+                text-align: center;
+            }
+
+            header nav li {
+                float: none;
+                display: block;
+            }
+
+            #showcase h1 {
+                font-size: 35px;
+            }
+
+            .container {
+                width: 100%;
+            }
+        }
+
+        /* Tablet Styles */
+        @media(min-width: 769px) and (max-width: 992px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">CitCenter</span> Islamabad</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#home">Home</a></li>
+                    <li><a href="#about-us">About</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Welcome to CitCenter Islamabad</h1>
+            <p>Your Gateway to Educational Excellence</p>
+        </div>
+    </section>
+
+    <section id="home">
+        <div class="container">
+            <h2>Our Mission</h2>
+            <p>CitCenter Islamabad is dedicated to providing high-quality education and fostering a learning environment that promotes academic excellence, personal growth, and responsible citizenship.</p>
+        </div>
+    </section>
+
+    <section id="about-us">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>CitCenter Islamabad is a leading educational institution committed to providing students with a comprehensive and enriching learning experience. Our mission is to empower individuals to reach their full potential through innovative programs, dedicated faculty, and a supportive learning community.</p>
+            <h3>Our Values</h3>
+            <ul>
+                <li>Excellence</li>
+                <li>Integrity</li>
+                <li>Innovation</li>
+                <li>Community</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="courses">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <ul class="course-list">
+                <li>
+                    <h3>Web Development</h3>
+                    <p>Learn to build dynamic websites and web applications using the latest technologies.</p>
+                    <p>Duration: 6 Months</p>
+                </li>
+                <li>
+                    <h3>Graphic Design</h3>
+                    <p>Master the art of visual communication and create stunning designs for print and digital media.</p>
+                    <p>Duration: 4 Months</p>
+                </li>
+                <li>
+                    <h3>Data Science</h3>
+                    <p>Explore the world of data analysis and machine learning to solve complex problems.</p>
+                    <p>Duration: 8 Months</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="testimonial">
+                <p>"CitCenter provided me with the skills and knowledge I needed to launch my career in web development. The instructors were knowledgeable and supportive, and the curriculum was challenging and engaging."</p>
+                <p>- John Doe, Web Developer</p>
+            </div>
+            <div class="testimonial">
+                <p>"I highly recommend CitCenter to anyone looking to advance their education. The courses are well-structured, the instructors are experts in their fields, and the learning environment is top-notch."</p>
+                <p>- Jane Smith, Graphic Designer</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div>
+                <h3>What are the admission requirements?</h3>
+                <p>Admission requirements vary depending on the program. Please visit our admissions page for more information.</p>
+            </div>
+            <div>
+                <h3>What is the tuition fee?</h3>
+                <p>Tuition fees vary depending on the program. Please contact our admissions office for more information.</p>
+            </div>
+            <div>
+                <h3>Do you offer financial aid?</h3>
+                <p>Yes, we offer financial aid to eligible students. Please visit our financial aid page for more information.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Feel free to reach out to us with any questions or inquiries.</p>
+            <div id="contact-form">
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email Address">
+                    <input type="text" placeholder="Subject">
+                    <textarea placeholder="Message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>CitCenter Islamabad, Copyright &copy; 2024</p>
+        <p>Address: Placeholder Address | Phone: Placeholder Phone | Email: Placeholder Email</p>
+    </footer>
+
+    <script>
+        // Basic mobile navigation toggle (example)
+        const nav = document.querySelector('nav');
+        const branding = document.querySelector('#branding');
+
+        function toggleMenu() {
+            nav.classList.toggle('active');
+            branding.classList.toggle('active'); //Optional:  Toggle branding visibility or style changes
+        }
+
+        //Add a rudimentary toggle button (for simplicity - this would normally be an actual icon)
+        const toggleButton = document.createElement('button');
+        toggleButton.textContent = 'Menu';
+        toggleButton.addEventListener('click', toggleMenu);
+        //This is really basic and not very accessible!  A real menu would be implemented very differently, with aria attributes, semantic HTML, etc.
+
+        branding.parentNode.insertBefore(toggleButton, branding);
+    </script>
+
+</body>
+</html>
