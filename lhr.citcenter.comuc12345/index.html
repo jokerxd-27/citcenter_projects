@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CitCenter Lahore - Hybrid Educational Institution">
+    <meta name="keywords" content="CitCenter, Lahore, Education, Hybrid Learning, Courses, Admissions">
+    <title>CitCenter Lahore</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background: #3498db;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: 3px solid #2980b9;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        header .highlight, header .current a {
+            color: #e67e22;
+            font-weight: bold;
+        }
+
+        header a:hover {
+            color: #ccc;
+            font-weight: bold;
+        }
+
+        /* Hero Section Styles */
+        #hero {
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        #hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        #hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            background: #e67e22;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        .button:hover {
+            background: #d35400;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px 0;
+            overflow: hidden;
+        }
+
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* About Us Section Styles */
+        #about-us .about-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #about-us .about-content div {
+            width: 45%;
+        }
+
+        #about-us img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Courses Section Styles */
+        #courses ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #courses li {
+            background: #fff;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        #courses li h3 {
+            margin-top: 0;
+        }
+
+        /* Admissions Section Styles */
+        #admissions form {
+            width: 70%;
+            margin: auto;
+        }
+
+        #admissions form div {
+            margin-bottom: 15px;
+        }
+
+        #admissions label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #admissions input[type="text"],
+        #admissions input[type="email"],
+        #admissions textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Gallery Section Styles */
+        #gallery .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        #gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Events Section Styles */
+        #events ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #events li {
+            margin-bottom: 15px;
+            padding: 15px;
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }
+
+        #events li h4 {
+            margin-top: 0;
+        }
+
+        /* FAQ Section Styles */
+        #faq .faq-item {
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        #faq .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #faq .faq-answer {
+            display: none;
+            margin-top: 10px;
+        }
+
+        /* Contact Us Section Styles */
+        #contact-us .contact-info {
+            margin-bottom: 20px;
+        }
+
+        #contact-us iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+        }
+
+        #contact-us form {
+            width: 70%;
+            margin: auto;
+        }
+
+        #contact-us form div {
+            margin-bottom: 15px;
+        }
+
+        #contact-us label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #contact-us input[type="text"],
+        #contact-us input[type="email"],
+        #contact-us textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Footer Styles */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            header #branding,
+            header nav {
+                float: none;
+                text-align: center;
+            }
+
+            header h1 {
+                margin-bottom: 10px;
+            }
+
+            header nav li {
+                float: none;
+                display: block;
+            }
+
+            #hero h1 {
+                font-size: 2.5em;
+            }
+
+            #hero p {
+                font-size: 1em;
+            }
+
+            #about-us .about-content {
+                flex-direction: column;
+            }
+
+            #about-us .about-content div {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            #admissions form,
+            #contact-us form {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">CitCenter</span> Lahore</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#about-us">About</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#admissions">Admissions</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact-us">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h1>Welcome to CitCenter Lahore</h1>
+            <p>Your path to a brighter future starts here. Explore our hybrid learning environment and unlock your potential.</p>
+            <a href="#courses" class="button">Explore Courses</a>
+        </div>
+    </section>
+
+    <section id="about-us">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div>
+                    <h3>Our Mission</h3>
+                    <p>To provide high-quality education that empowers students to excel in a rapidly changing world.</p>
+                    <h3>Our Vision</h3>
+                    <p>To be a leading educational institution recognized for innovation, excellence, and student success.</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/500x300" alt="CitCenter Students">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <ul>
+                <li>
+                    <h3>Web Development Fundamentals</h3>
+                    <p>Learn the basics of HTML, CSS, and JavaScript.</p>
+                    <p>Duration: 12 Weeks</p>
+                </li>
+                <li>
+                    <h3>Data Science Essentials</h3>
+                    <p>Explore data analysis, machine learning, and data visualization.</p>
+                    <p>Duration: 16 Weeks</p>
+                </li>
+                <li>
+                    <h3>Digital Marketing Strategies</h3>
+                    <p>Master SEO, social media marketing, and content creation.</p>
+                    <p>Duration: 10 Weeks</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="admissions">
+        <div class="container">
+            <h2>Admissions</h2>
+            <p>Follow these steps to apply for admission:</p>
+            <ol>
+                <li>Fill out the online application form.</li>
+                <li>Submit required documents (transcripts, ID).</li>
+                <li>Attend an interview (if required).</li>
+            </ol>
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="program">Program of Interest:</label>
+                    <input type="text" id="program" name="program">
+                </div>
+                <button type="submit" class="button">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="https://via.placeholder.com/300x200" alt="Gallery Image 1">
+                <img src="https://via.placeholder.com/300x200" alt="Gallery Image 2">
+                <img src="https://via.placeholder.com/300x200" alt="Gallery Image 3">
+                <img src="https://via.placeholder.com/300x200" alt="Gallery Image 4">
+            </div>
+        </div>
+    </section>
+
+    <section id="events">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>
+                    <h4>Web Development Workshop</h4>
+                    <p>Date: November 15, 2023</p>
+                    <p>Location: CitCenter Lahore Campus</p>
+                </li>
+                <li>
+                    <h4>Data Science Seminar</h4>
+                    <p>Date: December 5, 2023</p>
+                    <p>Location: Online Webinar</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="faq-question">What are the admission requirements?</div>
+                <div class="faq-answer">Admission requirements vary by program. Please check the admissions section for details.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Do you offer scholarships?</div>
+                <div class="faq-answer">Yes, we offer merit-based and need-based scholarships. Contact our admissions office for more information.</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-us">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p>Address: Johar Town, Lahore</p>
+                <p>Phone: +92 300 1234567</p>
+                <p>Email: info@lhr.citcenter.com</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.947587684136!2d74.34174247404543!3d31.47011947423204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ffca3d39b9a0423%3A0x2f7d6c5b5d7d5b9d!2sJohar%20Town%2C%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>CitCenter Lahore &copy; 2023</p>
+        </div>
+    </footer>
+
+    <script>
+        // Basic JavaScript for mobile navigation toggle (if needed)
+        // Example: Add a class to a navigation element to show/hide it on smaller screens.
+    </script>
+
+</body>
+</html>
